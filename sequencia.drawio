@@ -1,0 +1,190 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Sequência - ControleChamado">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- PARTICIPANTES -->
+        <mxCell id="p1" value="Usuário" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingTop=-2;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p2" value="ControleChamado&#xa;(main)" style="text;html=1;strokeColor=#6d3591;fillColor=#e1d5e7;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p2">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p3" value="Cliente" style="text;html=1;strokeColor=#006EAF;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p3">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="410" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p4" value="Chamado" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="20" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p4">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p5" value="Tecnico" style="text;html=1;strokeColor=#AE4132;fillColor=#f8cecc;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="20" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p5l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p5">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="690" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p6" value="Atendimento" style="text;html=1;strokeColor=#0e7ad1;fillColor=#dbeafe;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="20" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p6">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="840" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="p7" value="historicoChamado&#xa;(Map)" style="text;html=1;strokeColor=#b85450;fillColor=#fce4ec;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="20" width="110" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p7l" value="" style="endArrow=none;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p7">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="995" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 1: ABRIR CHAMADO -->
+        <mxCell id="bloco1" value="opção 4 — Abrir chamado" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="70" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m1" value="1. selecionar opção 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="100" as="sourcePoint"/><mxPoint x="260" y="100" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="2. localizar cliente por ID" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="125" as="sourcePoint"/><mxPoint x="410" y="125" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="3. clienteSelecionado" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="410" y="148" as="sourcePoint"/><mxPoint x="260" y="148" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m4" value="4. new Chamado(...)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="173" as="sourcePoint"/><mxPoint x="550" y="173" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="5. chamados.add(chamado)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="198" as="sourcePoint"/><mxPoint x="550" y="198" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m6" value="6. clienteDoChamado.put(chamado, cliente)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="223" as="sourcePoint"/><mxPoint x="995" y="223" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m7" value="7. historicoChamado.put(chamado, new ArrayList)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="248" as="sourcePoint"/><mxPoint x="995" y="248" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 2: ATRIBUIR TÉCNICO -->
+        <mxCell id="bloco2" value="opção 7 — Atribuir técnico" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="275" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m8" value="8. selecionar opção 7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="310" as="sourcePoint"/><mxPoint x="260" y="310" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m9" value="9. localizar técnico por ID" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="335" as="sourcePoint"/><mxPoint x="690" y="335" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m10" value="10. tecnicoEscolhido" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="690" y="358" as="sourcePoint"/><mxPoint x="260" y="358" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m11" value="11. atribuirTecnico(tecnicoEscolhido)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="383" as="sourcePoint"/><mxPoint x="550" y="383" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 3: REGISTRAR ATENDIMENTO -->
+        <mxCell id="bloco3" value="opção 8 — Registrar atendimento" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="410" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m12" value="12. selecionar opção 8" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="445" as="sourcePoint"/><mxPoint x="260" y="445" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m13" value="13. verificar chamado.tecnico" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="470" as="sourcePoint"/><mxPoint x="550" y="470" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m14" value="14. tecnico atribuído" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="493" as="sourcePoint"/><mxPoint x="260" y="493" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m15" value="15. new Atendimento(...)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="518" as="sourcePoint"/><mxPoint x="840" y="518" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m16" value="16. atendimentos.add(novoAtendimento)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="543" as="sourcePoint"/><mxPoint x="840" y="543" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m17" value="17. historicoChamado.get(chamado).add(atendimento)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="568" as="sourcePoint"/><mxPoint x="995" y="568" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m18" value="18. alterarStatus(EM_ATENDIMENTO)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="593" as="sourcePoint"/><mxPoint x="550" y="593" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 4: ALTERAR STATUS -->
+        <mxCell id="bloco4" value="opção 9 — Alterar status" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m19" value="19. selecionar opção 9" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="655" as="sourcePoint"/><mxPoint x="260" y="655" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m20" value="20. localizar chamado por ID" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="680" as="sourcePoint"/><mxPoint x="550" y="680" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m21" value="21. alterarStatus(novoStatus)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="705" as="sourcePoint"/><mxPoint x="550" y="705" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 5: ENCERRAR CHAMADO -->
+        <mxCell id="bloco5" value="opção 10 — Encerrar chamado" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="730" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m22" value="22. selecionar opção 10" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="765" as="sourcePoint"/><mxPoint x="260" y="765" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m23" value="23. localizar chamado por ID" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="790" as="sourcePoint"/><mxPoint x="550" y="790" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m24" value="24. chamado.encerrar()" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="815" as="sourcePoint"/><mxPoint x="550" y="815" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- BLOCO 6: VISUALIZAR DETALHES -->
+        <mxCell id="bloco6" value="opção 6 — Visualizar detalhes" style="text;html=1;strokeColor=#666;fillColor=#f5f5f5;align=center;fontSize=10;fontStyle=2;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="60" y="840" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m25" value="25. selecionar opção 6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="100" y="875" as="sourcePoint"/><mxPoint x="260" y="875" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m26" value="26. localizar chamado por ID" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="900" as="sourcePoint"/><mxPoint x="550" y="900" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m27" value="27. clienteDoChamado.get(chamado)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="925" as="sourcePoint"/><mxPoint x="995" y="925" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m28" value="28. dados do cliente" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="995" y="948" as="sourcePoint"/><mxPoint x="260" y="948" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m29" value="29. historicoChamado.get(chamado)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="973" as="sourcePoint"/><mxPoint x="995" y="973" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m30" value="30. lista de atendimentos" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="995" y="996" as="sourcePoint"/><mxPoint x="260" y="996" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m31" value="31. exibir detalhes ao usuário" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="1020" as="sourcePoint"/><mxPoint x="100" y="1020" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
